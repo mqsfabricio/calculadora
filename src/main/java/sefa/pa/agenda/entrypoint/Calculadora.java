@@ -19,4 +19,9 @@ public class Calculadora {
         Integer resultado = x - y;
         return resultado;
     }
+    @GetMapping("/multiplicar")
+    public Integer multiplicar (@RequestParam Integer x, @RequestParam Integer y) {
+        Integer resultado = x * y;
+        return resultado;
+    }
 }
